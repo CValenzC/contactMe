@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Contenedor general del área izquierda */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-right: 1px solid #ddd; /* Línea separadora con el área principal */
+    height: 100vh;
+}
+
+/* Estado del usuario - parte superior */
+.user-status {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd; /* Línea separadora debajo de este bloque */
+}
+
+.user-status img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px; /* Tamaño de la imagen de perfil */
+    height: 40px;
+}
+
+.user-status .user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-status .user-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.user-status .user-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Estilos para los íconos */
+.icon-section {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: auto; /* Alinea los íconos hacia la derecha */
+}
+
+.icon-section i {
+    font-size: 1.2rem;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Botón "Nuevo Chat" */
+.user-actions {
+    padding: 20px; /* Ajustado para reducir el espacio vertical */
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd; /* Línea debajo del botón */
+}
+
+.chat-button {
+    padding: 10px 20px;
+    background-color: #A491D2;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.chat-button:hover {
+    background-color: #CDC3E6;
+}
+
+/* Lista de contactos */
+.chat-list {
+    width: 100%;
+}
+
+.chat-list .contact {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd; /* Línea de separación entre contactos */
+}
+
+.chat-list .contact:last-child {
+    border-bottom: none; /* Evita línea extra al final de la lista */
+}
+
+.chat-list img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px; /* Tamaño del avatar */
+    height: 40px;
+}
+
+.chat-list .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-list .contact-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.chat-list .contact-info p {
+    margin: 0;
+    font-size: 12px;
+    color: #888;
+}
+
+/* Área principal */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+.main-message {
+    text-align: center;
+}
+
+.main-icon {
+    width: 150px;
+    margin-bottom: 2rem;
+}
+
+.main-message h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.main-message p {
+    font-size: 1rem;
+    color: #666;
+}
